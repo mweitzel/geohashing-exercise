@@ -15,3 +15,11 @@ test('date and dow return 32char md5', function(t) {
   )
   t.end()
 })
+
+test('splits string in half', function(t) {
+  t.deepEqual(
+    geoHash.splitStringInHalf('1234567890')
+  , ['12345','67890']
+  )
+  t.end()
+})

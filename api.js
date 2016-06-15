@@ -1,6 +1,6 @@
 var express = require('express');
 var app     = express();
-var geoHash = require('./lib/geohash');
+var geoHash = require('./lib/geohash').convertLatLongWithTodaysDow;
 
 app.get('/geohash', function(req, res, next) {
   respond = function(data){
